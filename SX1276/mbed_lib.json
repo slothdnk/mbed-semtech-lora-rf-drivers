@@ -11,7 +11,8 @@
         },
         "radio-variant": {
             "help": "Use to set the radio variant if the antenna switch input is not connected.",
-            "value": "SX1276UNDEFINED"
+            "_value": "SX1276UNDEFINED",
+            "value": "SX1276MB1MAS"
         }
     }
 }

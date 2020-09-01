@@ -1678,11 +1678,11 @@ void SX1276_LoRaRadio::set_antenna_switch(uint8_t mode)
                 // setup or not
                 if ((read_register(REG_PACONFIG) & RF_PACONFIG_PASELECT_PABOOST)
                         == RF_PACONFIG_PASELECT_PABOOST) {
-                    _rf_switch_ctl1 = 1;
-                    _rf_switch_ctl2 = 0;
+                    _rf_switch_ctl1 = 0;
+                    _rf_switch_ctl2 = 1;
                 } else {
                     // power amplifier not selected
-                    _rf_switch_ctl1 = 0;
+                    _rf_switch_ctl1 = 1;
                     _rf_switch_ctl2 = 1;
                 }
             }
